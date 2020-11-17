@@ -1,0 +1,15 @@
+version: "3"
+services:
+  postgres:
+    container_name: mattcassara-postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: mattcassara-postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - strapidb:/data/mattcassara
+    ports:
+      - "5050:5432"
+
+volumes:
+  strapidb:
