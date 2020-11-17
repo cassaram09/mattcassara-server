@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_navigation_menu_items",
+  "info": {
+    "name": "menu_item",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

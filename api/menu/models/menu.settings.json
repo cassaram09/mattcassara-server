@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "menus",
+  "info": {
+    "name": "Menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "menu_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.menu-items"
+    }
+  }
+}
