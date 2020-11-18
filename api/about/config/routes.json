@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/about",
-      "handler": "about.index",
+      "handler": "about.find",
       "config": {
         "policies": []
       }

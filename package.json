@@ -11,6 +11,8 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^23.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.0",
     "knex": "<0.20.0",
     "pg": "^8.5.1",
     "slugify": "^1.4.6",
@@ -22,6 +24,7 @@
     "strapi-plugin-content-type-builder": "3.3.2",
     "strapi-plugin-email": "3.3.2",
     "strapi-plugin-graphql": "3.3.2",
+    "strapi-plugin-html-wysiwyg": "^1.0.4",
     "strapi-plugin-upload": "3.3.2",
     "strapi-plugin-users-permissions": "3.3.2",
     "strapi-provider-upload-aws-s3": "^3.3.2",
