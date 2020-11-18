@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/blog-page",
-      "handler": "blog-page.index",
+      "path": "/blog",
+      "handler": "blog.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/blog-page",
-      "handler": "blog-page.update",
+      "path": "/blog",
+      "handler": "blog.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/blog-page",
-      "handler": "blog-page.delete",
+      "path": "/blog",
+      "handler": "blog.delete",
       "config": {
         "policies": []
       }

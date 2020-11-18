@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/projects-page",
-      "handler": "projects-page.index",
+      "path": "/projectpage",
+      "handler": "projectpage.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/projects-page",
-      "handler": "projects-page.update",
+      "path": "/projectpage",
+      "handler": "projectpage.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/projects-page",
-      "handler": "projects-page.delete",
+      "path": "/projectpage",
+      "handler": "projectpage.delete",
       "config": {
         "policies": []
       }

@@ -1,17 +1,18 @@
 {
   "kind": "singleType",
-  "collectionName": "projects_page",
+  "collectionName": "projectpages",
   "info": {
-    "name": "Projects Page"
+    "name": "Projects Page",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "hero_image": {
       "model": "file",

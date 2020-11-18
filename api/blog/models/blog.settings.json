@@ -1,17 +1,17 @@
 {
   "kind": "singleType",
-  "collectionName": "blog_pages",
+  "collectionName": "blogs",
   "info": {
-    "name": "Blog Page"
+    "name": "Blog"
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": true
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "hero_image": {
       "model": "file",
