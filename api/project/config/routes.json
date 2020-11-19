@@ -10,8 +10,8 @@
     },
     {
       "method": "GET",
-      "path": "/projects/:slug",
-      "handler": "project.findBySlug",
+      "path": "/projects/:id",
+      "handler": "project.findOne",
       "config": {
         "policies": []
       }
