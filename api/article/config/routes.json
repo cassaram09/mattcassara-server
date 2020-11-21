@@ -10,16 +10,16 @@
     },
     {
       "method": "GET",
-      "path": "/articles/count",
-      "handler": "article.count",
+      "path": "/articles/:id",
+      "handler": "article.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/articles/:slug",
-      "handler": "article.findBySlug",
+      "path": "/articles/count",
+      "handler": "article.count",
       "config": {
         "policies": []
       }

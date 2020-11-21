@@ -6,11 +6,4 @@ module.exports = {
 
     return articles;
   },
-  findBySlug: async (ctx) => {
-    const article = await strapi
-      .query("article")
-      .findOne({ slug: ctx.params.slug });
-
-    return article;
-  },
 };
