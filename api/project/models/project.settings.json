@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "projects",
   "info": {
-    "name": "Project"
+    "name": "Project",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -67,6 +69,9 @@
     "active": {
       "type": "boolean",
       "default": true
+    },
+    "completed_on": {
+      "type": "date"
     }
   }
 }
