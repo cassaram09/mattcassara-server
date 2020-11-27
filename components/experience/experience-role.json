@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_experience_experience_roles",
+  "info": {
+    "name": "experience_role",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  }
+}

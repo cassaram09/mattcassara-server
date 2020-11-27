@@ -39,6 +39,9 @@
     },
     "bio": {
       "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
     }
   }
 }

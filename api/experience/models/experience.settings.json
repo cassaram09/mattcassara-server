@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "experiences",
   "info": {
-    "name": "Experience"
+    "name": "Experience",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -41,6 +43,11 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "experience_roles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.experience-role"
     }
   }
 }
