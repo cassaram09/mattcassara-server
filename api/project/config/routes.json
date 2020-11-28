@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/projects",
-      "handler": "project.index",
+      "handler": "project.find",
       "config": {
         "policies": []
       }

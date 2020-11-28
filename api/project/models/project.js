@@ -3,10 +3,12 @@ const slugify = require("slugify");
 module.exports = {
   lifecycles: {
     beforeCreate(params) {
-      params.slug = slugify(params.title, { strict: true }).toLowerCase();
+      params.slug = slugify(params.title || "", { strict: true }).toLowerCase();
     },
     beforeUpdate(params, data) {
-      data.slug = slugify(data.title, { strict: true }).toLowerCase();
+      if (data && data.title) {
+        data.slug = slugify(data.title || "", { strict: true }).toLowerCase();
+      }
     },
   },
 };
