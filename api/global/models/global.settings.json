@@ -16,6 +16,17 @@
     },
     "linkedin_url": {
       "type": "string"
+    },
+    "resume": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
