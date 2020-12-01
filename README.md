@@ -6,15 +6,17 @@
 
 3. `yarn develop` to start strapi server
 
-# Dumping and Restoring
+# Migrating Database to Heroku
 
-## Dump local DB
+The local development database can be migrated to Heroku by running a bash script or by manually running commands.
 
-To dump the local DB, ensure the Docker db container is running, then run `utils/pg_dump.sh`
+## A. Script Restore
 
-## Restore to heroku
+Run the migration script `bash utils/migrate.sh`.
 
-### Manual Restore
+## B. Manual Restore
+
+Ensure the Docker db container is running, then run `utils/pg_dump.sh`
 
 Upload to a public service, such as Amazon S3. Then sign the file:
 
@@ -23,7 +25,3 @@ Upload to a public service, such as Amazon S3. Then sign the file:
 Upload to Heroku using the Heroku CLI:
 
 `heroku pg:backups:restore '<signed_url>' DATABASE_URL --app mattcassara-server --confirm mattcassara-server`
-
-### Script Restore
-
-Upload to a public service, such as Amazon S3. Then run `utils/heroku_restore.sh`, passing the file name as the argument. This script will automatically sign the file and restore to Heroku.
