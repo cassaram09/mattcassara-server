@@ -14,7 +14,7 @@
     "@ckeditor/ckeditor5-build-classic": "^23.1.0",
     "@ckeditor/ckeditor5-react": "^3.0.0",
     "knex": "<0.20.0",
-    "pg": "7",
+    "pg": "7.4.3",
     "slugify": "^1.4.6",
     "sqlite3": "latest",
     "strapi": "3.3.2",
